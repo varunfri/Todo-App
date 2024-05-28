@@ -11,7 +11,7 @@ class ToDoDatabase {
     todoList = [
       ["ToDo-List", false],
       ["Add Task", false],
-      ["Scroll left to delete task", false],
+      ["Swipe left to delete task", false],
     ];
     _myBox.put(1, todoList);
   }

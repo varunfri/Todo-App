@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:todo/database.dart';
+import 'package:todo/pages/about.dart';
 import 'package:todo/pages/dialog.dart';
 import 'package:todo/pages/todo_tile.dart';
 
@@ -84,6 +85,18 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Colors.yellow[200],
       appBar: AppBar(
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const About(),
+                  ),
+                );
+              },
+              icon: const Icon(Icons.info))
+        ],
         title: const Text("ToDo List"),
         centerTitle: true,
         backgroundColor: Colors.yellow[400],
