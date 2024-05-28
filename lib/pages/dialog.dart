@@ -27,9 +27,19 @@ class DialogBox extends StatelessWidget {
             //get UsedInput
             TextField(
               controller: taskController,
+              cursorColor: Colors.black,
               decoration: InputDecoration(
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(20),
+                  borderSide: const BorderSide(color: Colors.black),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(20),
+                  borderSide: const BorderSide(color: Colors.black),
+                ),
                 hintText: "Task Name",
-                labelText: "Task",
+                labelText: "Task Name",
+                labelStyle: const TextStyle(color: Colors.black),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
